@@ -1,15 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace tpmod5_103022300079
+class HaloGeneric
 {
-    internal class Program
+    public void SapaUser<T>(T user)
     {
-        static void Main(string[] args)
-        {
-        }
+        Console.WriteLine($"Halo user {user}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        HaloGeneric halo = new HaloGeneric();
+        halo.SapaUser("NamaPanggilan"); // Ganti dengan nama panggilan praktikan
     }
 }
